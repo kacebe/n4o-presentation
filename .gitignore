@@ -1,5 +1,6 @@
 .example_files
 .template_files
+.README_files
 example.html
 template.html
 .DS_Store
