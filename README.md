@@ -30,17 +30,17 @@ Screenshots und Anleitung beziehen sich im folgenden auf VSCodium mit Quarto-Erw
 
 3. Geben Sie folgenden Befehl ein:
 ```bash
-quarto use template kacebe/n4o-slide-template
+quarto use template kacebe/n4o-presentation
 ```
 
 ![](img/vscodium_terminal_02.png)
 
-Dadurch wird die Erweiterung installiert und eine Beispiel-`.qmd`-Datei erstellt, die Sie als Ausgangspunkt für Ihre Präsentation verwenden können.
+Beantworten Sie die Fragen in der Konsole. Schließlich wird die Erweiterung installiert und eine Beispiel-`.qmd`-Datei erstellt, die Sie als Ausgangspunkt für Ihre Präsentation verwenden können.
 
 Wenn Sie bereits eine Quarto-Präsentation in einer `.qmd`-Datei in dem Verzeichnis gespeichert haben und diese Vorlage darauf anwenden wollen, geben Sie diesen Befehl ein:
 
 ```bash
-quarto add kacebe/n4o-slide-template
+quarto add kacebe/n4o-presentation
 ```
 
 ### Updates
@@ -48,7 +48,7 @@ quarto add kacebe/n4o-slide-template
 Das n4o-presentation-template wird wahrscheinlich weiter angepasst werden. Mit dem Befehl...
 
 ```bash
-quarto update kacebe/n4o-slide-template
+quarto update kacebe/n4o-presentation
 ```
 
 ... bleiben Sie auf dem neuesten Stand.
