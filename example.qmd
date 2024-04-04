@@ -1,0 +1,142 @@
+---
+title: "Beispiel"
+subtitle: "Foliensatz"
+author: 
+  - name: Jane Roe
+    orcid: 0000-0000-0000-0000
+    email: email@example.org
+    affiliation: 
+      - name: Incredible Campus
+        city: Outer State
+        url: https://example.org
+    attributes:
+      corresponding: true
+      equal-contributor: true
+  - name: John Doe
+    orcid: 0000-0000-0000-0000
+    email: email@example.org
+    affiliation: 
+      - name: Party University
+        city: Moon
+        url: https://example.org
+    attributes:
+      corresponding: false
+      equal-contributor: true
+date: today
+format:
+  n4o-presentation-revealjs:
+    echo: true
+    embed-resources: false
+    slide-number: h/v # Foliennummern werden angezeigt und nach Aschnitt/Nummer unterschieden.
+    include-in-header: # Metadaten für html-Ausgabe. Anzupassen sind: title, description, und url.
+      text: |
+        <meta property="og:title" content="Beispielpräsentation"/>
+        <meta property="og:description" content="Eine Beispielpräsentation mit dem NFDI4Objects Quarto Template"/>
+        <meta property="og:url" content="https://github.com/kacebe/n4o-slide-template/tree/main/example.qmd)"/>
+        <meta property="og:image" content="https://github.com/kacebe/n4o-slide-template/tree/main/n4o_logo_kurztitel.png"/>
+        <meta property="og:image:alt" content="NFDI4Objects Logo"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:locale" content="de_DE"/>
+    controls: true # Aktiviert die Foliensteuerung; alternativ: false
+    chalkboard: true # Aktiviert eine interaktive Zeichenoberfläche; alternativ: false
+    reference-location: document # Fußnoten werden auf der letzten Folie gesammelt.
+---
+
+# Folien mit Text
+
+Folienabschnitt mit Beispielen für Folien mit Text
+
+## Listen 1
+
+- Ene
+  - Mene
+    - Miste
+- Es rappelt
+  - in der
+    - Kiste
+
+## Listen 2
+
+1. Erstens
+   - Punkt a
+2. Zweitens
+   - Punkt b
+3. Drittens
+4. Viertens
+   1. Punkt 1.
+   2. Punkt 2.
+      1. Punkt 2.1
+
+
+## Formatierung
+
+Mit einfachem markup Absätze, Sätze, Wörter und Buchstaben formatieren:
+
+```         
+~~Ein ganzer Absatz durchgestrichen~~
+```
+
+"~~Ein ganzer Absatz durchgestrichen~~"
+
+`*Ein ganzer Satz kursiv*`: "*Ein ganzer Satz kursiv*"
+
+`Ein **Wort** im Satz **fett**`: "Ein **Wort** im Satz **fett**"
+
+`***Fett** und *kursiv* ***zusammen*** geht auch`: "**Fett** und *kursiv* ***zusammen*** geht auch"
+
+## Text mit Verweisen und Fußnoten
+
+Das Arbeiten mit Fußnoten in Quarto[^1] ist sehr gut dokumentiert.[^2]
+
+[^1]: [Quarto](https://quarto.org/)
+
+[^2]: [Quarto-Hilfe zu Fußnoten](https://quarto.org/docs/presentations/revealjs/#asides-footnotes)
+
+## Aside
+
+Normaler Text
+
+::: aside
+Randbemerkung: Bei jedem klugen Wort von Sokrates rief Xanthippe zynisch: Quatsch
+:::
+
+# Folien mit Bildern
+
+## Eingebettetes Bild
+
+!["[Jubilee and Munin, Ravens, Tower of London](https://commons.wikimedia.org/w/index.php?curid=48615973)" by [Colin](https://commons.wikimedia.org/wiki/User:Colin) from Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jubilee_and_Munin%2C_Ravens%2C_Tower_of_London_2016-04-30.jpg/1024px-Jubilee_and_Munin%2C_Ravens%2C_Tower_of_London_2016-04-30.jpg){#Raben fig-alt="Jubilee und Munin, zwei der Tower-Raben. Jubilee ist 2012 in Somerset geschlüpft und trägt einen goldenen Ring. Er wurde der Queen zu ihrem Diamantenen Thronjubiläum überreicht. Munin ist 1995 in North Uise geschlüpft und trägt einen hellgrünen Ring. Sie ist der älteste Rabe im Tower. Die Identifikation der Raben wurde von Chris Skaife, dem Ravenmaster („Rabenmeister“), bestätigt."}
+
+## Zwei Spalten: Text und Bild
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- Jubilee und Munin, zwei der Tower-Raben. 
+  - Jubilee ist 2012 in Somerset geschlüpft und trägt einen goldenen Ring. Er wurde der Queen zu ihrem Diamantenen Thronjubiläum überreicht. 
+  - Munin ist 1995 in North Uise geschlüpft und trägt einen hellgrünen Ring. Sie ist der älteste Rabe im Tower. 
+    - Die Identifikation der Raben wurde von Chris Skaife, dem Ravenmaster („Rabenmeister“), bestätigt.
+:::
+
+::: {.column width="60%"}
+!["[Jubilee and Munin, Ravens, Tower of London](https://commons.wikimedia.org/w/index.php?curid=48615973)" by [Colin](https://commons.wikimedia.org/wiki/User:Colin) from Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jubilee_and_Munin%2C_Ravens%2C_Tower_of_London_2016-04-30.jpg/1024px-Jubilee_and_Munin%2C_Ravens%2C_Tower_of_London_2016-04-30.jpg){#Raben fig-alt="Jubilee und Munin, zwei der Tower-Raben. Jubilee ist 2012 in Somerset geschlüpft und trägt einen goldenen Ring. Er wurde der Queen zu ihrem Diamantenen Thronjubiläum überreicht. Munin ist 1995 in North Uise geschlüpft und trägt einen hellgrünen Ring. Sie ist der älteste Rabe im Tower. Die Identifikation der Raben wurde von Chris Skaife, dem Ravenmaster („Rabenmeister“), bestätigt."}
+:::
+
+::::
+
+# Folien mit Code
+
+Folienabschnitt mit Beispielen für Folien mit Code
+
+## Python
+
+``` python
+one = 1
+two = 2
+three = one + two
+print(three)
+
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world
+print(helloworld)
+```

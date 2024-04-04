@@ -1,0 +1,118 @@
+---
+title: "Titel"
+subtitle: "Untertitel"
+author: 
+  - name: Vorname1 Nachname1
+    orcid: 0000-0000-0000-0000
+    email: email@example.org
+    affiliation: 
+      - name: Institution
+        city: Stadt
+        url: https://example.org
+    attributes:
+      corresponding: true
+      equal-contributor: true
+  - name: Vorname2 Nachname2
+    orcid: 0000-0000-0000-0000
+    email: email@example.org
+    affiliation: 
+      - name: Institution
+        city: Stadt
+        url: https://example.org
+    attributes:
+      corresponding: false
+      equal-contributor: true
+date: today
+format:
+  n4o-presentation-revealjs:
+    echo: true
+    slide-number: h/v # Foliennummern werden angezeigt und nach Aschnitt/Nummer unterschieden.
+    include-in-header: # Metadaten für html-Ausgabe. Anzupassen sind: title, description, und url.
+      text: |
+        <meta property="og:title" content="Titel"/>
+        <meta property="og:description" content="Beschreibung"/>
+        <meta property="og:url" content="URL zur Präsentation"/>
+        <meta property="og:image" content="https://github.com/kacebe/n4o-slide-template/tree/main/n4o_logo_kurztitel.png"/>
+        <meta property="og:image:alt" content="NFDI4Objects Logo"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:locale" content="de_DE"/>
+    footer: "[Kontakt](https://example.org) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
+    controls: true # Aktiviert die Foliensteuerung; alternativ: false
+    chalkboard: true # Aktiviert eine interaktive Zeichenoberfläche; alternativ: false
+    reference-location: document # Fußnoten werden auf der letzten Folie gesammelt.
+---
+
+## Präsentation strukturieren
+
+Die Strukturierung einer Präsentation in Quarto wird mit \# Überschriften generiert:
+
+`# Überschrift` generiert einen neuen Folienabschnitt (section) mit mehreren Unterfolien, die mit `## Überschrift` voneinander getrennt werden.
+
+Weitere Folien können jederzeit mit `-----` (Fünf Minus-Zeichen) eingefügt werden.
+
+## Beispiel einer Folienstruktur
+
+Die folgenden Folien sind so aufgebaut:
+
+```qmd
+# Folienabschnitt 1
+
+Erläuterungen zu Folienabschnitt 1
+
+## Folienabschnitt 1 - Folie 1
+
+Prall vom Whisky flog Quax den Jet zu Bruch.
+
+## Folienabschnitt 1 - Folie 2
+
+Oh, welch Zynismus!“, quiekte Xavers jadegrüne Bratpfanne.
+
+# Folienabschnitt 2
+
+Erläuterungen zu Folienabschnitt 2
+
+## Folienabschnitt 2 - Folie 1
+
+Bei jedem klugen Wort von Sokrates rief Xanthippe zynisch: Quatsch
+
+-----
+
+Folie ohne Überschrift
+
+-----
+
+## Folienabschnitt 2 - Folie 3
+
+Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt.
+
+```
+
+# Folienabschnitt 1
+
+Erläuterungen zu Folienabschnitt 1
+
+## Folienabschnitt 1 - Folie 1
+
+Prall vom Whisky flog Quax den Jet zu Bruch.
+
+## Folienabschnitt 1 - Folie 2
+
+Oh, welch Zynismus!“, quiekte Xavers jadegrüne Bratpfanne.
+
+# Folienabschnitt 2
+
+Erläuterungen zu Folienabschnitt 2
+
+## Folienabschnitt 2 - Folie 1
+
+Bei jedem klugen Wort von Sokrates rief Xanthippe zynisch: Quatsch
+
+-----
+
+Folie ohne Überschrift
+
+-----
+
+## Folienabschnitt 2 - Folie 3
+
+Zwei flinke Boxer jagen die quirlige Eva und ihren Mops durch Sylt.

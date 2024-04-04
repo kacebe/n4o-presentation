@@ -1,0 +1,243 @@
+/*************************
+Quarto-Folien-Template für NFDI4Objects
+Kai-Christian Bruhn
+MIT License
+Inspiriert von: 
+https://github.com/hrbrmstr/quarto-organization-template
+https://github.com/beatrizmilz/quarto-rladies-theme/
+https://github.com/mcanouil/quarto-revealjs-storybook/
+*************************/
+
+// importing fonts
+@import url(https://fonts.bunny.net/css?family=PT+Sans:300,300i,400,400i,500,500i,700,700i,800,800i,900,900i);
+
+// fonts
+$font-family-sans-serif: "PT-Sans", sans-serif !default;
+$font-family-monospace: "PT-Sans", "Consolas", "Courier New", monospace !default;
+
+// colors
+$n4o_grund_01: #072a54;
+$n4o_grund_02: #005F8E;
+$n4o_grund_03: #6A6D71;
+$n4o_grund_04: #A6AAAC;
+$n4o_grund_05: #E8EAEB;
+
+// general
+$presentation-font-size-root: 40px;
+$body-bg: $n4o_grund_05 !default;
+$body-color: $n4o_grund_01 !default;
+$link-color: $n4o_grund_01;
+
+// headings
+$presentation-heading-font: $font-family-sans-serif !default;
+$presentation-heading-color: $n4o_grund_01 !default;
+$presentation-heading-line-height: 1.3 !default;
+$presentation-heading-letter-spacing: normal !default;
+$presentation-heading-text-transform: none !default;
+$presentation-heading-text-shadow: none !default;
+$presentation-h1-text-shadow: none !default;
+$presentation-heading-font-weight: 600 !default;
+$presentation-h1-font-size: 1.5em !default;
+$presentation-h2-font-size: 1.1em !default;
+$presentation-h3-font-size: 1em !default;
+$presentation-h4-font-size: 1em !default;
+
+// font sizes
+$presentation-text-size: 0.8em !default;
+$presentation-code-size: 0.8em !default;
+$presentation-text-footer-size: 14px !default;
+
+//code
+$code-color: $n4o_grund_01 !default;
+
+/*-- scss:rules --*/
+
+.reveal .slides section h2 {
+    margin-bottom: 0.8em !important;
+}
+
+.reveal .slides section p {
+    font-size: $presentation-text-size;
+}
+
+.reveal .slides section pre {
+    font-size: $presentation-text-size !important;
+}
+
+.reveal div.sourceCode {
+    border: 5px solid $n4o_grund_01;
+}
+
+// codebox
+.reveal pre.sourceCode code {
+    background-color: white;
+    font-size: 0.6em;
+}
+
+.reveal pre code {
+    background-color: white;
+    padding: 0.5em;
+    line-height: 1em;
+}
+
+// inline code
+.reveal p code {
+    background-color: white;
+    padding: 0em 0.2em 0em 0.2em;
+}
+
+.reveal .slide ul li,
+.reveal .slide ol li {
+  margin-top: 0.2em;
+  margin-bottom: 0em;
+  font-size: $presentation-text-size !important;
+  line-height: 1.1em !important;
+}
+
+.reveal .footnotes ol li p {
+    font-size: $presentation-code-size !important;
+    line-height: 0.8em !important;
+}
+
+// aside
+.reveal .slide aside,
+.reveal .slide div.aside {
+  position:absolute;
+  bottom:20px;
+  font-size: $presentation-text-size;
+  color: $n4o_grund_01;
+}
+  
+// -- Title-Slide -------------------------------- //
+
+// no slide-number: https://github.com/quarto-dev/quarto-cli/issues/1445
+
+.reveal .slide-number > a[href*='title-slide'] {
+    display: none !important;
+}
+
+#title-slide,
+div.reveal div.slides section.quarto-title-block {
+  text-align:left !important;
+  // margin-top: 100px;
+}
+
+#title-slide,
+div.reveal div.slides section.quarto-title-block h1 {
+  color: $n4o_grund_01;
+  // margin-top: 100px;
+}
+
+#title-slide .subtitle,
+div.reveal div.slides section.quarto-title-block .subtitle {
+  margin-bottom:2.5rem
+}
+
+.reveal .quarto-title-block .quarto-title-authors {
+    display:flex;
+    justify-content:flex-start;
+  }
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author {
+    padding-left:0em;
+    padding-right:1em
+  }
+
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author a,
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author a:hover,
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author a:visited,
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author a:active {
+    color:inherit;
+    text-decoration:underline
+  }
+
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author .quarto-title-author-name {
+    margin-bottom:.1rem;
+    font-size:.9em;
+  }
+
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author .quarto-title-author-email {
+    margin-top:0px;
+    margin-bottom:.4em;
+    font-size:.5em;
+  }
+  
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author .quarto-title-author-orcid img {
+    margin-bottom:4px;
+}
+  
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author .quarto-title-affiliation p a {
+    margin-top:0px;
+    margin-bottom:8px;
+}
+  
+.reveal .quarto-title-block .quarto-title-authors .quarto-title-author .quarto-title-affiliation:first {
+    margin-top:12px;
+}
+
+.reveal .quarto-title-block .date {
+    font-size:.7em;
+}
+
+// -------------------------------------------------- //
+
+// slide number
+.reveal .slide-number {
+    font-family: $presentation-heading-font;
+    font-size: $presentation-text-footer-size !important;
+}
+
+// tabset
+.reveal .panel-tabset [role=tab] {
+    font-size: 0.8em;
+}
+
+// footer
+.reveal .footer {
+    color: $n4o_grund_04;
+    font-family: $presentation-heading-font;
+    font-size: $presentation-text-footer-size;
+}
+
+.reveal .footer p {
+    color: $n4o_grund_04;
+    font-size: $presentation-text-footer-size;
+}
+
+// Image Captions
+.reveal .slide figure>figcaption,
+.reveal .slide img.stretch+p.caption,
+.reveal .slide img.r-stretch+p.caption {
+  font-size:0.3em !important;
+  margin: auto;
+  text-align: center;
+}
+
+// links
+.reveal .slide a {
+  text-decoration: underline;
+}
+
+section.has-dark-background a, section.has-dark-background a:hover {
+    color: $n4o_grund_05;
+}
+
+// logo
+/*
+.reveal .slide-logo {
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 10px !important;
+    max-height: 12% !important;
+    height: 100% !important;
+    width: auto !important;
+    color: $body-color !important;
+}
+    
+.slide-number, .reveal.has-logo .slide-number {
+    bottom: 10px !important;
+    right: 10px !important;
+    top: unset !important;
+    color: $body-color !important;
+}
+*/
