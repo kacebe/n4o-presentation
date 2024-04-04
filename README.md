@@ -101,11 +101,27 @@ Die Beispielpräsentation, in der auch die wichtigsten Funktionen für Quarto-Pr
 
 Alle Möglichkeiten der Gestaltung von Inhalten sind in der [Quarto-Dokumentation](https://quarto.org/docs/presentations/revealjs/#overview) hinterlegt.
 
+Die Generierung der Präsentation starten Sie in der geöffneten .qmd-Datei mit mit der Tastenkombination `STRG-Shift-k` oder 
+
+### Beispielfolien
+
+aus `example.qmd`:
+
+![Titelfolie](img/2024-04-04-19-44-34.png)
+*Titelfolie*
+
+![Beispielfolie mit zwei Spalten und Bild](img/2024-04-04-19-45-37.png)
+*Beispielfolie mit zwei Spalten und Bild*
+
+## ToDo
+
+Die Verwendung der Logos und die Gestaltung der Fußzeile.
+
 ## Aknowledgements
 
 Diese Vorlage ist inspiriert von:
 
-- [Altmeyer, Patrick. 2023. “Quarto on Steroids: Advanced Customization Through Quarto Extensions.” January 16, 2023.](https://www.paltmeyer.com/blog//blog/posts/)quarto-extensions. 
-- https://github.com/hrbrmstr/quarto-organization-template
-- https://github.com/beatrizmilz/quarto-rladies-theme/
-- https://github.com/mcanouil/quarto-revealjs-storybook/
+- [Altmeyer, Patrick. 2023. “Quarto on Steroids: Advanced Customization Through Quarto Extensions.” January 16, 2023.](https://www.paltmeyer.com/blog/posts/quarto-extensions/)
+- [Easily Customizable Quarto Template by Bob Rudis](https://github.com/hrbrmstr/quarto-organization-template)
+- [Quarto R-Ladies Theme by Beatriz Milz](https://github.com/beatrizmilz/quarto-rladies-theme/)
+- [Quarto Reveal.js template - Storybook by Mickaël Canouil](https://github.com/mcanouil/quarto-revealjs-storybook/)
