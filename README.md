@@ -14,7 +14,7 @@ Mit dem Template in diesem Repository können Präsentationen erstellt werden, d
 
 ## Voraussetzungen
 
-Für die Nuztung des Templates muss Quarto auf dem Rechner installiert sein. Einen guten Einstieg bietet [das *Get Started*-Tutorial](https://quarto.org/docs/get-started/) auf der Website des Projekts.
+Für die Nuztung des Templates muss Quarto auf dem Rechner installiert sein (Version >=1.4.0). Einen guten Einstieg bietet [das *Get Started*-Tutorial](https://quarto.org/docs/get-started/) auf der Website des Projekts.
 
 Das n4o-slide-template wurde mit [VSCodium](https://vscodium.com/) und der [Extension for the Quarto scientific and technical publishing system.](https://open-vsx.org/extension/quarto/quarto) entwickelt.
 
