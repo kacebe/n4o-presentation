@@ -1,13 +1,14 @@
 title: n4o-presentation
 author: Kai-Christian Bruhn
 institute: "Hochschule Mainz"
-version: 1.0.0
+version: 1.0.1
 quarto-required: ">=1.4.0"
 contributes:
   formats:
     revealjs:
       theme: [default, n4o_presentation.scss]
       embed-ressources: false
+      touch: false # switch to true, if you use a touch screen.
       # logo: n4o_logo_kurztitel.png
       date-format: "DD.MM.YYYY"
       highlight-style: github
