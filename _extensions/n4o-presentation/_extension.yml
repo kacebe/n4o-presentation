@@ -18,6 +18,7 @@ contributes:
         - n4o_favicon_32px.png
       include-in-header: favicon.html
       title-slide-attributes:
-        # data-background-color: #005F8E
-        # data-background-image: n4o_title_slide_bg.png
-        # data-background-size: cover
+        data-background-color: #005F8E
+        data-background-image: n4o_title_slide_bg.png
+        data-background-size: contain
+        data-background-position: center

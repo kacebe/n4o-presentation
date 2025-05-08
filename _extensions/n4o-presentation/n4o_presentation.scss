@@ -11,6 +11,8 @@ https://github.com/mcanouil/quarto-revealjs-storybook/
 // importing fonts
 @import url(https://fonts.bunny.net/css?family=PT+Sans:300,300i,400,400i,500,500i,700,700i,800,800i,900,900i);
 
+/*-- scss:defaults --*/
+
 // fonts
 $font-family-sans-serif: "PT-Sans", sans-serif !default;
 $font-family-monospace: "PT-Sans", "Consolas", "Courier New", monospace !default;
@@ -24,7 +26,7 @@ $n4o_grund_05: #E8EAEB;
 
 // general
 $presentation-font-size-root: 40px;
-$body-bg: $n4o_grund_05 !default;
+// $body-bg: $n4o_grund_05 !default;
 $body-color: $n4o_grund_01 !default;
 $link-color: $n4o_grund_01;
 
@@ -107,7 +109,16 @@ $code-color: $n4o_grund_01 !default;
   font-size: $presentation-text-size;
   color: $n4o_grund_01;
 }
-  
+
+// -- Default Slide background -- //
+// https://stackoverflow.com/questions/77160460/background-image-in-all-slides-in-reveal-quarto-markdown
+
+.slide-background-content{
+  background-image: url("n4o_section_bg.png");
+  background-size: 100% 100%;
+}
+
+
 // -- Title-Slide -------------------------------- //
 
 // no slide-number: https://github.com/quarto-dev/quarto-cli/issues/1445
@@ -119,13 +130,13 @@ $code-color: $n4o_grund_01 !default;
 #title-slide,
 div.reveal div.slides section.quarto-title-block {
   text-align:left !important;
-  // margin-top: 100px;
+  margin-top: 75px;
+  margin-left: 100px;
 }
 
 #title-slide,
 div.reveal div.slides section.quarto-title-block h1 {
-  color: $n4o_grund_01;
-  // margin-top: 100px;
+  color: $n4o_grund_05;
 }
 
 #title-slide .subtitle,
@@ -214,7 +225,8 @@ div.reveal div.slides section.quarto-title-block .subtitle {
 
 // links
 .reveal .slide a {
-  text-decoration: underline;
+  text-decoration: none !important;
+  color: $n4o_grund_02;
 }
 
 section.has-dark-background a, section.has-dark-background a:hover {
