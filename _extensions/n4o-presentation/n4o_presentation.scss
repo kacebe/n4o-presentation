@@ -53,7 +53,9 @@ $presentation-text-footer-size: 14px !default;
 $code-color: $n4o_grund_01 !default;
 
 /*-- scss:rules --*/
+/*-- scss:rules --*/
 
+// slide content
 .reveal .slides section h2 {
     margin-bottom: 0.8em !important;
 }
@@ -70,23 +72,6 @@ $code-color: $n4o_grund_01 !default;
     border: 5px solid $n4o_grund_01;
 }
 
-// codebox
-.reveal pre.sourceCode code {
-    background-color: white;
-    font-size: 0.6em;
-}
-
-.reveal pre code {
-    background-color: white;
-    padding: 0.5em;
-    line-height: 1em;
-}
-
-// inline code
-.reveal p code {
-    background-color: white;
-    padding: 0em 0.2em 0em 0.2em;
-}
 
 .reveal .slide ul li,
 .reveal .slide ol li {
@@ -110,15 +95,23 @@ $code-color: $n4o_grund_01 !default;
   color: $n4o_grund_01;
 }
 
-// -- Default Slide background -- //
-// https://stackoverflow.com/questions/77160460/background-image-in-all-slides-in-reveal-quarto-markdown
-
-.slide-background-content{
-  background-image: url("n4o_section_bg.png");
-  background-size: 100% 100%;
+// code
+.reveal pre.sourceCode code {
+    background-color: white;
+    font-size: 0.6em;
 }
 
+.reveal pre code {
+    background-color: white;
+    padding: 0.5em;
+    line-height: 1em;
+}
 
+.reveal p code {
+    background-color: white;
+    padding: 0em 0.2em 0em 0.2em;
+}
+  
 // -- Title-Slide -------------------------------- //
 
 // no slide-number: https://github.com/quarto-dev/quarto-cli/issues/1445
@@ -232,24 +225,3 @@ div.reveal div.slides section.quarto-title-block .subtitle {
 section.has-dark-background a, section.has-dark-background a:hover {
     color: $n4o_grund_05;
 }
-
-// logo
-/*
-.reveal .slide-logo {
-    display: block !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 10px !important;
-    max-height: 12% !important;
-    height: 100% !important;
-    width: auto !important;
-    color: $body-color !important;
-}
-    
-.slide-number, .reveal.has-logo .slide-number {
-    bottom: 10px !important;
-    right: 10px !important;
-    top: unset !important;
-    color: $body-color !important;
-}
-*/
