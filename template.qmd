@@ -34,7 +34,7 @@ format:
         <meta property="og:url" content="URL zur Präsentation"/>
         <meta property="og:image" content="https://github.com/kacebe/n4o-presentation/blob/main/_extensions/n4o-presentation/n4o_logo_kurztitel.png"/>
         <meta property="og:image:alt" content="NFDI4Objects Logo"/>
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="presentation"/>
         <meta property="og:locale" content="de_DE"/>
     footer: "[Kontakt](https://example.org) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)"
     controls: true # Aktiviert die Foliensteuerung; alternativ: false
