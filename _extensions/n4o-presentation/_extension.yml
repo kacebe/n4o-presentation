@@ -1,23 +1,24 @@
 title: n4o-presentation
 author: Kai-Christian Bruhn
 institute: "Hochschule Mainz"
-version: 1.0.0
+version: 1.0.1
 quarto-required: ">=1.4.0"
 contributes:
   formats:
     revealjs:
       theme: [default, n4o_presentation.scss]
-      embed-ressources: false
+      embed-ressources: true
+      touch: false # switch to true, if you use a touch screen.
       # logo: n4o_logo_kurztitel.png
       date-format: "DD.MM.YYYY"
       highlight-style: github
       format-resources:
-        - n4o_logo_kurztitel.png
-        - n4o_bg.png
-        - n4o_titleslide_bg.png
-        - n4o_logo.ico
+        - n4o_section_bg.png
+        - n4o_title_slide_bg.png
+        - n4o_favicon_32px.png
       include-in-header: favicon.html
       title-slide-attributes:
         data-background-color: #005F8E
-        # data-background-image: n4o_titleslide_bg.png
-        # data-background-size: cover
+        data-background-image: n4o_title_slide_bg.png
+        data-background-size: contain
+        data-background-position: center

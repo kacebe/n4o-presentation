@@ -1,6 +1,7 @@
-.example_files
-.template_files
-.README_files
+example_files/
+template_files/
+README_files/
+lokal/
+img/
 example.html
 template.html
-.DS_Store
